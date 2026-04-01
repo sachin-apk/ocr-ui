@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+.btn {
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover effect */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Active (click) effect */
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Disabled state */
+.btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
