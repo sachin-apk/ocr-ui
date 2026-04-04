@@ -2,6 +2,7 @@ import react, { useState } from 'react';
 import axios from 'axios';
 import Upload from './components/Upload';
 import Text from './components/Text';
+import Footer from './components/Footer';
 import './App.css';
 
 
@@ -47,6 +48,8 @@ function App() {
         </div>
 
       </div>
+      
+      <Footer />
 
 
     </>
