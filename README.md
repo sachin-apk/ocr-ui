@@ -1,11 +1,21 @@
 # OCR UI
 
-## About This project
+A web-based UI to extract text from images using OCR.
 
-This project uses react, tailwindcss as ui.  
-The backend is built on node and express.  
+## Features
+- Upload image
+- Extract text
+- Copy/download text
 
-### what it does
-It takes a photo and extract the text from the image.  
-It uses spaceOCR api for scanning of images and text extraction.
+## Tech Stack
+- React / TailwindCSS
+- Space ocr / API
 
+## Setup
+cd "/backend"
+npm install
+node index.js
+cd ..
+cd "/handwritten"
+npm install
+npm run dev
