@@ -2,7 +2,7 @@
 
 OCR UI is a frontend web application designed to interact with an Optical Character Recognition (OCR) service. It provides a user-friendly interface where users can upload images and extract readable text from them.
 
-The project typically acts as the client-side interface for an OCR API, enabling users to:
+The project typically acts as the client-side interface for an OCR API.
 
 
 ## Key Features
@@ -13,8 +13,8 @@ The project typically acts as the client-side interface for an OCR API, enabling
 
 ## Process
 - Upload image
-- View Text
 - Extract text
+- View Text
 - Copy/download text
 
 ## Tech Stack

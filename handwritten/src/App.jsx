@@ -3,10 +3,12 @@ import axios from 'axios';
 import Upload from './components/Upload';
 import Text from './components/Text';
 import Footer from './components/Footer';
+import Hero from './components/Hero';
 import './App.css';
 
 
 function App() {
+  const [showHero, setShowHero] = useState(true);
   const [files, setFiles] = useState([]);
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(false);
@@ -24,7 +26,7 @@ function App() {
     try {
       const res = await api.post("upload/", formData);
       console.log(res.data);
-      
+
       // adding the state of extracted text
       const data = await res.data;
       setText(data.extractedText.join("\n\n"));
@@ -42,18 +44,32 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
-        <div>
-          {text ? <Text text={text} setText={setText} /> : <Upload files={files} setFiles={setFiles} loading={loading} handleUpload={handleUpload} />}
-        </div>
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-50 to-gray-100 p-6">
+
+        {showHero && (
+          <Hero onStart={() => setShowHero(false)} />
+        )}
+
+        {!showHero && (
+          <div>
+            {text ? (
+              <Text text={text} setText={setText} />
+            ) : (
+              <Upload
+                files={files}
+                setFiles={setFiles}
+                loading={loading}
+                handleUpload={handleUpload}
+              />
+            )}
+          </div>
+        )}
 
       </div>
-      
+
       <Footer />
-
-
     </>
-  )
+  );
 }
 
 export default App;
