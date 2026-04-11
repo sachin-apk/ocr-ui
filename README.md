@@ -6,10 +6,10 @@ The project typically acts as the client-side interface for an OCR API, enabling
 
 
 ## Key Features
-📤 Upload images.
-🔍 Process them using OCR (Space ocr)
-📄 View extracted text results in real time
-💾 Copy or download the recognized text
+📤 Upload images.  
+🔍 Process them using OCR (Space ocr)  
+📄 View extracted text results in real time  
+💾 Copy or download the recognized text  
 
 ## Process
 - Upload image
@@ -24,10 +24,10 @@ The project typically acts as the client-side interface for an OCR API, enabling
 
 ## Setup (bash cmds)
 
-cd "/backend"
-npm install
-node index.js
-cd ..
-cd "/handwritten"
-npm install
-npm run dev
+cd "/backend"  
+npm install  
+node index.js  
+cd ..  
+cd "/handwritten"  
+npm install  
+npm run dev  
